@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container">
+    <br>
+    <div class = "card">
+        <div class = "card-body">
+            <div class="row">
+                <div class ="col-sm">
+                    <div class="form-group">
+                        <label for="day">Day Of Week</label>
+                        <input type="date" class="form-control" id="day">
+                    </div>
+
+                </div>
+                <div class ="col-sm">
+                    <div class="form-group">
+                        <label for="day">Meal</label>
+                        <input type="text" class="form-control" id="food" placeholder="Type Of Food">
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id = "add" class = "btn btn-primary" width>Create</button>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <table id="meals" class = "table table-dark table-striped">
+        <tr>
+            <th>Date</th>
+            <th>Meal</th>
+            
+        </tr>
+
+    </table>
+    
+
+    <script src = "node_modules/jquery/dist/jquery.js"></script>
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src = "Table.js"></script>
+</body>
+</html>
